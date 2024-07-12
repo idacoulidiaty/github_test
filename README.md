@@ -19,8 +19,55 @@ Github est un eplatforme  d'hébergement de projets Git
 - git commit -m "message de commit" (mettre un vrai message)
 - git push origin main (pousser les modifs locales vers github) (git push -u origin main : le ' -u' n'est mis que sur le 1er commit pour synchroniser notre fichier en local avec github. Il n'e pas necessaire de le rajouter sur les commits suivants)
 
-## faire un commit:
-- vérifier l'état actuel du commit: git status
-- ajouter le fichier
+## configurer Git:
+git config –global user.name “”
+git config –global user.email “”
+
+## Créer un dossier:
+mkdir monprojet
+
+## Aller dans un dossier:
+cd mondossier
+
+## initialiser un repertoir git:
+git init
+
+## Voir l’état actuel de git:
+git status
+
+## photographier tous les fichiers:
+git add --all
+
+## Faire un commit:
+git commit -m “nom de mon commit”
+
+## Voir si un fichier a été modifié:
+git status –short
+
+## Voir l’historique des commits :
+git log
+
+
+## Voir toutes les commandes possibles sur git:
+git help –all
+
+## Voir les options disponibles pour une comùmande spécifique:
+git commande -help
+
+## Créer une branche:
+git branch mabranche
+
+## Verifier une branche:
+git checkout mabranche
+Possibilité d’utiliser l’option -b sur checkout  pour créer une nouvelle branche et l’ouvrir si elle est encore inexistante
+
+## fusionner:
+git merge mabranche
+
+## Supprimer une branche:
+git branch -d mabranche
+
+## Entrer dans une branche:
+git checkout mabranche
 
 
